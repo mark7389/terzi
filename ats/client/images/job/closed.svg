@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 100 100">
+
+    <path id="outline"
+          d="
+                M 5 50
+
+                a 45 45, 0, 0, 1, 90 0
+                a 45 45, 0, 0, 1, -90 0
+
+                M 32.32233047033631 32.32233047033631
+                l 35.35533905932738 35.35533905932738
+                m 0 -35.35533905932738
+                l -35.35533905932738 35.35533905932738
+            "
+          fill="none"
+          stroke="black"
+          stroke-width="10"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+    />
+
+</svg>

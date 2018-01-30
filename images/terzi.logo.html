@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<canvas id="logo-canvas"
+        width="100"
+        heigh="100">
+
+    This browser does not support the HTML canvas tag.
+
+</canvas>
+
+<script>
+
+    console.log('terzi: logo canvas script.');
+
+    window.onload = function () {
+
+        console.log('terzi: window loaded.');
+
+        var canvas = document.getElementById("logo-canvas");
+        var context = canvas.getContext("2d");
+        var logo = new Image(100, 100);
+
+        logo.onload = function () {
+
+            console.log('terzi: logo image loaded.');
+
+            context.beginPath();
+            context.rect(0, 0, 100, 100);
+            context.fillStyle = '#000';
+            context.fill();
+            context.drawImage(logo, 0, 0, 100, 100);
+
+        };
+
+        logo.src = 'terzi.svg';
+
+    };
+
+
+
+</script>
+
+</body>
+
+</html>

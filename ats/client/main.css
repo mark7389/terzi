@@ -1,0 +1,147 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup,
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {
+    border: 0;
+}
+
+body {
+    position: relative;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+article {
+    margin: 0 100px;
+}
+
+header {
+    clear: both;
+}
+
+section {
+    display: block;
+    margin: 20px 0;
+}
+
+h1 {
+    position: relative;
+	font-size: 28px;
+	line-height: 32px;
+}
+
+h2 {
+    position: relative;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+/* Form Elements */
+
+input, textarea, label {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+	margin: 5px 0px;
+	padding: 5px 10px;
+
+	color: black;
+	border-style: dashed;
+	border-color: black;
+	border-width: 0;
+	border-bottom-width: 2px;
+
+	font-size: 12px;
+}
+
+input[type=text]:focus, input[type=search]:focus, textarea:focus {
+    outline: none;
+}
+
+input[type=checkbox] {
+    width: auto;
+    margin: 0;
+    margin-right: 5px;
+
+    border: none;
+}
+
+button, input[type=button], input[type=submit] {
+    width: auto;
+
+    background-color: transparent;
+    color: black;
+    border-width: 2px;
+    border-style: solid;
+
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+   color: gray;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: gray;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: gray;
+}
+
+:-ms-input-placeholder {
+   color: gray;
+}
+
+label {
+    display: inline-block;
+    width: auto;
+    margin-left: 0;
+    margin-right: 15px;
+    padding: 5px 0;
+
+    border: none;
+}
+
+:root input[type=checkbox] {
+    position: absolute;
+    left: -1000em;
+}
+
+:root input[type=checkbox] + label {
+    cursor: pointer;
+}
+
+:root input[type=checkbox] + label:before {
+    content: "";
+
+    display: inline-block;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px 0 0;
+
+    background-image: url('images/checkbox/unchecked.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+}
+
+:root input[type=checkbox]:checked + label:before {
+    background-image: url('images/checkbox/checked.svg');
+}

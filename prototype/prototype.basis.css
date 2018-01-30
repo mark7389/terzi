@@ -1,0 +1,142 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+}
+
+.txt-s {
+    font-size: 10px;
+    line-height: 12.5px;
+}
+
+.txt-m {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.txt-l {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.txt-xl {
+    font-size: 40px;
+    line-height: 55px;
+}
+
+.txt-display {
+    font-family: 'Playfair Display', serif;
+}
+
+.txt-serif {
+    font-family: 'PT Serif', serif;
+}
+
+.txt-monospace {
+    font-family: 'Inconsolata', monospace;
+}
+
+article {
+    margin-left: 100px;
+    padding: 0 10px;
+}
+
+/* Layout */
+
+body {
+    position: relative;
+
+    padding: 10px;
+
+    background-color: #000;
+    color: #FFF;
+}
+
+article {
+    position: relative;
+}
+
+article > header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+}
+
+article > header > img {
+    width: 100px;
+    height: 100px;
+}
+
+article > header > h1 {
+    line-height: 100px;
+    text-transform: lowercase;
+}
+
+article > nav {
+    position: fixed;
+    top: 100px;
+    left: 0;
+
+    width: 100px;
+}
+
+article > nav > ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+}
+
+article > nav > ul > li {
+    padding: 10px 0;
+}
+
+article > nav > ul > li  img {
+    width: 40px;
+    height: 40px;
+}
+
+section {
+    position: relative;
+
+    margin-bottom: 30px;
+}
+
+section > header {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+section > header > h1 {
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+section > header > img {
+    position: absolute;
+    top: 0;
+    left: -80px;
+
+    width: 40px;
+    height: 40px;
+}
+
+@media (orientation: landscape) {
+
+    article {
+    }
+
+}

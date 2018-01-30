@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+
+    <title>Streit Search: Applicant Tracking System (ATS)</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Faddy Michel Samaan from Terzi">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="search.css">
+    <script src="search.js"></script>
+
+</head>
+
+<body>
+
+<article id="ss-search">
+
+    <header>
+
+        <form id="ss-search-form">
+
+            <input type="search" placeholder="keywords ..."/>
+
+            <fieldset id="ss-type-filters">
+
+                <input id="ss-search-jobs"
+                       type="checkbox"
+                       value="jobs"
+                       checked
+                />
+                <label for="ss-search-jobs">
+                    Jobs
+                </label>
+
+                <input id="ss-search-candidates"
+                       type="checkbox"
+                       value="candidates"
+                       checked
+                />
+                <label for="ss-search-candidates">
+                    Candidates
+                </label>
+
+                <input id="ss-search-clients"
+                       type="checkbox"
+                       value="clients"
+                       checked
+                />
+                <label for="ss-search-clients">
+                    Clients
+                </label>
+
+            </fieldset>
+
+            <input id="ss-search-button" type="submit" value="Search"/>
+
+        </form>
+
+    </header>
+
+    <section id="ss-search-records">
+
+        <h2 id="ss-search-records-counter">
+            13 Records: 4 jobs, 7 applicants, 2 employers
+        </h2>
+
+        <section class="ss-search-record">
+
+            <header>
+
+                <div class="ss-search-record-picture">
+                    <img src="images/uber-logo.png" alt="Uber Logo"/>
+                </div>
+
+                <div class="ss-search-record-info">
+
+                    <h3 class="ss-search-record-id">
+                        Employer-1:
+                    </h3>
+
+                    <h2 class="ss-search-record-title">
+                        Uber
+                    </h2>
+
+                    <span class="ss-search-record-jobs-counter">
+                        3
+                    </span>
+
+                </div>
+
+            </header>
+
+            <section class="ss-search-record-body">
+
+                <div>
+
+                    <h3 class="ss-search-record-jobs-counter open">
+                        1
+                    </h3>
+
+                    <ul class="ss-employer-job-list">
+
+                        <li>
+                            <span>Job-2</span> Electronic Mail Specialist
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h3 class="ss-search-record-jobs-counter success">
+                        1
+                    </h3>
+
+                    <ul class="ss-employer-job-list">
+
+                        <li>
+                            <span>Job-3</span> Image review clerk
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h3 class="ss-search-record-jobs-counter closed">
+                        1
+                    </h3>
+
+                    <ul class="ss-employer-job-list">
+
+                        <li>
+                            <span>Job-1</span> Intelligence agent
+                        </li>
+                    </ul>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <section class="ss-search-record">
+
+            <header>
+
+                <div class="ss-search-record-picture">
+                    <img src="images/job.svg"/>
+                </div>
+
+                <div class="ss-search-record-info">
+
+                    <h3 class="ss-search-record-id">
+                        Job-1:
+                    </h3>
+
+                    <h2 class="ss-search-record-title">
+                        Intelligence Agent
+                    </h2>
+
+                </div>
+
+            </header>
+
+        </section>
+
+    </section>
+
+</article>
+
+</body>
+
+</html>

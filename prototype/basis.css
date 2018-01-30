@@ -1,0 +1,357 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
+dl, dt, dd, ol, ul, li, fieldset, form, input, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup,
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+    position: relative;
+
+	margin: 0;
+	padding: 0;
+
+    background: none;
+    color: black;
+	border: 0;
+
+    font-family: "Work Sans", sans-serif;
+}
+
+/* Lists */
+
+ul.trz-list {
+    list-style-type: none;
+}
+
+/* Blocks */
+
+.trz-block.inline {
+    display: inline-block;
+}
+
+.trz-block.main-margin {
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.trz-block.icon-margin {
+    margin-left: 50px;
+}
+
+.trz-block.section-margin {
+    margin-bottom: 20px;
+}
+
+.trz-block.size-xs.section-margin {
+    margin-bottom: 10px;
+}
+
+.trz-block.size-s.section-margin {
+    margin-bottom: 15px;
+}
+
+.trz-block.size-m.section-margin {
+    margin-bottom: 20px;
+}
+
+.trz-block.size-l.section-margin {
+    margin-bottom: 25px;
+}
+
+.trz-block.size-xl.section-margin {
+    margin-bottom: 30px;
+}
+
+.trz-block.size-xxl.section-margin {
+    margin-bottom: 35px;
+}
+
+.trz-block.size-xxxl.section-margin {
+    margin-bottom: 40px;
+}
+
+/* Text */
+
+.trz-text.size-xs {
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.trz-text.size-s {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.trz-text.size-m {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.trz-text.size-l {
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.trz-text.size-xl {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.trz-text.size-xxl {
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.trz-text.size-xxxl {
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.trz-text.height-xxxl {
+    line-height: 40px;
+}
+
+.trz-text.weight-100 {
+    font-weight: 100;
+}
+
+.trz-text.weight-200 {
+    font-weight: 200;
+}
+
+.trz-text.weight-300 {
+    font-weight: 300;
+}
+
+.trz-text.weight-400 {
+    font-weight: 400;
+}
+
+.trz-text.weight-500 {
+    font-weight: 500;
+}
+
+.trz-text.weight-600 {
+    font-weight: 600;
+}
+
+.trz-text.weight-700 {
+    font-weight: 700;
+}
+
+.trz-text.weight-800 {
+    font-weight: 800;
+}
+
+.trz-text.weight-900 {
+    font-weight: 900;
+}
+
+.trz-text.style-n {
+    font-style: normal;
+}
+
+.trz-text.style-i {
+    font-style: italic;
+}
+
+.trz-text.transform-uppercase {
+    text-transform: uppercase;
+}
+
+.trz-text.transform-capitalize {
+    text-transform: capitalize;
+}
+
+.trz-text.transform-lowercase {
+    text-transform: lowercase;
+}
+
+.trz-text.icon-line-height {
+    line-height: 16px;
+}
+
+/* Inputs */
+
+fieldset {
+    width: 100%;
+}
+
+input, textarea {
+    display: inline-block;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+	border-style: solid;
+	border-color: black;
+	border-width: 0;
+	border-bottom-width: 1px;
+	background-color: transform;
+}
+
+input[type=text]:focus, input[type=search]:focus, textarea:focus {
+    outline: none;
+}
+
+input[type=checkbox] {
+    border: none;
+}
+
+label {
+    display: inline-block;
+
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+:root input[type=checkbox] {
+    position: absolute;
+    left: -1000em;
+}
+
+:root input[type=checkbox] + label {
+    cursor: pointer;
+}
+
+:root input[type=checkbox] + label:before {
+    content: "";
+
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding-left: 5px;
+
+    background-color: transparent;
+    background-image: url('/ats/interface/images/checkbox/unchecked.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 16px;
+}
+
+:root input[type=checkbox] + label.size-s:before {
+    width: 12px;
+    height: 12px;
+
+    background-size: 12px;
+    background-position: bottom;
+}
+
+:root input[type=checkbox]:checked + label:before {
+    background-image: url('/ats/interface/images/checkbox/checked.svg');
+}
+
+button, input[type=button], input[type=submit] {
+    display: inline-block;
+    width: auto;
+    padding: 5px 10px;
+
+    background-color: transparent;
+    color: black;
+    border-width: 1px;
+    border-style: solid;
+
+    cursor: pointer;
+}
+
+input[type=submit].trz-icon {
+    border: none;
+}
+
+/* Icons */
+
+.trz-icon.img {
+    position: absolute;
+    left: 0;
+
+    border: none;
+}
+
+.trz-icon.img.size-xs {
+    width: 10px;
+    height: 10px;
+}
+
+.trz-icon.img.size-s {
+    width: 14px;
+    height: 14px;
+}
+
+.trz-icon.img.size-m {
+    width: 16px;
+    height: 16px;
+}
+
+.trz-icon.img.size-l {
+    width: 22px;
+    height: 22px;
+}
+
+.trz-icon.img.size-xl {
+    width: 30px;
+    height: 30px;
+}
+
+.trz-icon.img.size-xxxl {
+    width: 40px;
+    height: 40px;
+    left: -50px;
+    bottom: 0;
+}
+
+.trz-icon.background-image {
+    background-repeat: no-repeat;
+}
+
+.trz-icon.trz-text.background-image.size-xs {
+    background-size: 10px;
+}
+
+.trz-icon.trz-text.background-image.size-s {
+    background-size: 15px;
+}
+
+.trz-icon.trz-text.background-image.size-m {
+    background-size: 20px;
+}
+
+.trz-icon.trz-text.background-image.size-l {
+    background-size: 25px;
+}
+
+.trz-icon.trz-text.background-image.size-xl {
+    background-size: 30px;
+}
+
+.trz-icon.trz-text.background-image.size-xxl {
+    background-size: 35px;
+}
+
+.trz-icon.trz-text.background-image.size-xxxl {
+    background-size: 40px;
+}
+
+.trz-icon.search-icon {
+    background-image: url('/ats/interface/images/search.svg');
+}
+
+.trz-icon.jobs-icon {
+    background-image: url('/ats/interface/images/job.svg');
+}
+
+.trz-icon.open-jobs-icon {
+    background-image: url('/ats/interface/images/job/open.svg');
+}
+
+.trz-icon.closed-jobs-icon {
+    background-image: url('/ats/interface/images/job/closed.svg');
+}
+
+.trz-icon.success-jobs-icon {
+    background-image: url('/ats/interface/images/job/success.svg');
+}
+
+.trz-icon.trz-text {
+    margin-right: 10px;
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 100 100">
+
+    <path id="box"
+          d="
+                M 5 5
+                h 90
+                v 90
+                h -90
+                z
+            "
+          fill="none"
+          stroke="black"
+          stroke-width="10"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+    />
+
+</svg>

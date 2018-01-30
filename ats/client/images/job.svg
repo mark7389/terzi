@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 100 100">
+
+    <path id="outline"
+          d="
+                M 5 50
+
+                a 45 45, 0, 0, 1, 90 0
+                a 45 45, 0, 0, 1, -90 0
+            "
+          fill="none"
+          stroke="black"
+          stroke-width="10"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+    />
+
+    <path id="nine-to-five"
+          d="
+                M 5 50
+                a 45 45, 0, 0, 1, 90 0
+                a 45 45, 0, 0, 1, -22.500000000000004 38.97114317029974
+                l -22.499999999999996 -38.97114317029974
+            "
+          fill="black"
+    />
+
+    <path id="hands"
+          d="
+                M 25 50
+                h 35
+                m -10 10
+                v -45
+            "
+          fill="none"
+          stroke="black"
+          stroke-width="20"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+    />
+
+    <path id="hands"
+          d="
+                M 25 50
+                h 35
+                m -10 10
+                v -45
+            "
+          fill="none"
+          stroke="white"
+          stroke-width="10"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+    />
+
+</svg>
